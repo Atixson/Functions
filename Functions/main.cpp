@@ -1,8 +1,8 @@
-// Function
+п»ї// Function
 #include <iostream>
 using namespace std;
 
-int Sum(int a, int b); // Прототип функции (Объявление фунции - Function declaration)
+int Sum(int a, int b); // РџСЂРѕС‚РѕС‚РёРї С„СѓРЅРєС†РёРё (РћР±СЉСЏРІР»РµРЅРёРµ С„СѓРЅС†РёРё - Function declaration)
 int Dif(int a, int b);
 int Product(int a, int b);
 double Quotient(int a, int b);
@@ -11,15 +11,15 @@ void main()
 {
     setlocale(LC_ALL, "");
     int a, b;
-    cout << "Введите два числа: "; cin >> a >> b;
-    int c = Sum(a, b); // Использование функции (Вызов функции - Function call)
+    cout << "Р’РІРµРґРёС‚Рµ РґРІР° С‡РёСЃР»Р°: "; cin >> a >> b;
+    int c = Sum(a, b); // РСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ С„СѓРЅРєС†РёРё (Р’С‹Р·РѕРІ С„СѓРЅРєС†РёРё - Function call)
     cout << a << " + " << b << " = " << c << endl;
     cout << a << " - " << b << " = " << Dif(a, b) << endl;
     cout << a << " * " << b << " = " << Product(a, b) << endl;
     cout << a << " / " << b << " = " << Quotient(a, b) << endl;
 }
 
-// Реализация фунции (Определение функции - Function definition) 
+// Р РµР°Р»РёР·Р°С†РёСЏ С„СѓРЅС†РёРё (РћРїСЂРµРґРµР»РµРЅРёРµ С„СѓРЅРєС†РёРё - Function definition) 
 int Sum(int a, int b)
 {
     int c = a + b;
@@ -27,7 +27,7 @@ int Sum(int a, int b)
 }
 int Dif(int a, int b)
 {
-    //Difference - разность
+    //Difference - СЂР°Р·РЅРѕСЃС‚СЊ
     return a - b;
 }
 int Product(int a, int b)

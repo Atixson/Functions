@@ -1,4 +1,4 @@
-// Arrays
+ï»¿// Arrays
 #include <iostream>
 using namespace std;
 
@@ -19,13 +19,13 @@ void main()
 	FillRand(arr, size);
 	Print(arr, size);
 	Sum(arr, size);
-	cout << "Ñðåäíåå àðèôìåòè÷åñêîå ýëåìåíòîâ ìàññèâà = " << Avg(arr, size) << "\n";
-	cout << "Ìèíèìàëüíîå çíà÷åíèå: " << minValueIn(arr, size) << "\n";
-	cout << "Ìàêñèìàëüíîå çíà÷åíèå: " << maxValueIn(arr, size) << "\n";
+	cout << "Ð¡Ñ€ÐµÐ´Ð½ÐµÐµ Ð°Ñ€Ð¸Ñ„Ð¼ÐµÑ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¼Ð°ÑÑÐ¸Ð²Ð° = " << Avg(arr, size) << "\n";
+	cout << "ÐœÐ¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ: " << minValueIn(arr, size) << "\n";
+	cout << "ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ: " << maxValueIn(arr, size) << "\n";
 	shiftLeft(arr, size);
 	shiftRight(arr, size);
 }
-// Çàïîëíåíèå
+// Ð—Ð°Ð¿Ð¾Ð»Ð½ÐµÐ½Ð¸Ðµ
 void FillRand(int arr[], const int size)
 {
 	srand(time(NULL));
@@ -34,7 +34,7 @@ void FillRand(int arr[], const int size)
 		arr[i] = rand() % 20;
 	}
 }
-// Âûâîä íà ýêðàí
+// Ð’Ñ‹Ð²Ð¾Ð´ Ð½Ð° ÑÐºÑ€Ð°Ð½
 void Print(int arr[], const int size)
 {
 	for (int i = 0; i < size; i++)
@@ -42,7 +42,7 @@ void Print(int arr[], const int size)
 		cout << arr[i] << endl;
 	}
 }
-// Ñóììà
+// Ð¡ÑƒÐ¼Ð¼Ð°
 int Sum(int arr[], const int size)
 {
 	int c = 0;
@@ -52,10 +52,10 @@ int Sum(int arr[], const int size)
 		c += arr[i];
 		cout << " + " << arr[i] << " = " << c << endl;
 	}
-	cout<< "\n\n\n" << "Ñóììà ýåëåìåíòîâ ìàññèâà = " <<  c << endl;
+	cout<< "\n\n\n" << "Ð¡ÑƒÐ¼Ð¼Ð° ÑÐµÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¼Ð°ÑÑÐ¸Ð²Ð° = " <<  c << endl;
 	return c;
 }
-// Ñðåäíåå àðèôìåòè÷åñêîå
+// Ð¡Ñ€ÐµÐ´Ð½ÐµÐµ Ð°Ñ€Ð¸Ñ„Ð¼ÐµÑ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ
 double Avg(int arr[], const int size)
 {
 	int c = 0;
@@ -65,7 +65,7 @@ double Avg(int arr[], const int size)
 	}
 	return (double)c / size;
 }
-// Ìèíèìàëüíîå è ìàêñèìàëüíîå çíà÷åíèå
+// ÐœÐ¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð¸ Ð¼Ð°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ
 int minValueIn(int arr[], const int size)
 {
 	int sum = 0, min = arr[0];
@@ -88,18 +88,18 @@ int maxValueIn(int arr[], const int size)
 	}
 	return max;
 }
-// Ñäâèã ìàññèâà âëåâî
+// Ð¡Ð´Ð²Ð¸Ð³ Ð¼Ð°ÑÑÐ¸Ð²Ð° Ð²Ð»ÐµÐ²Ð¾
 void shiftLeft(int arr[], const int size)
 {
-	//Âûâîä èñõîäíîãî ìàññèâà
+	//Ð’Ñ‹Ð²Ð¾Ð´ Ð¸ÑÑ…Ð¾Ð´Ð½Ð¾Ð³Ð¾ Ð¼Ð°ÑÑÐ¸Ð²Ð°
 	for (int i = 0; i < size; i++)
 	{
 		cout << arr[i] << "\t";
 	}
 	cout << endl;
-	//Ñäâèã 
+	//Ð¡Ð´Ð²Ð¸Ð³ 
 	int number_shifts;
-	cout << "Ââåäèòå êîëè÷åñòâî ñäâèãîâ âëåâî: "; cin >> number_shifts;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÐ´Ð²Ð¸Ð³Ð¾Ð² Ð²Ð»ÐµÐ²Ð¾: "; cin >> number_shifts;
 	for (int i = 0; i < number_shifts; i++)
 	{
 		int buffer = arr[0];
@@ -109,25 +109,25 @@ void shiftLeft(int arr[], const int size)
 		}
 		arr[size - 1] = buffer;
 	}
-	//Âûâîä íà ýêðàí ñäâèíóòîãî ìàññèâà
+	//Ð’Ñ‹Ð²Ð¾Ð´ Ð½Ð° ÑÐºÑ€Ð°Ð½ ÑÐ´Ð²Ð¸Ð½ÑƒÑ‚Ð¾Ð³Ð¾ Ð¼Ð°ÑÑÐ¸Ð²Ð°
 	for (int i = 0; i < size; i++)
 	{
 		cout << arr[i] << "\t";
 	}
 	cout << endl;
 }
-// Ñäâèã ìàññèâà âïðàâî
+// Ð¡Ð´Ð²Ð¸Ð³ Ð¼Ð°ÑÑÐ¸Ð²Ð° Ð²Ð¿Ñ€Ð°Ð²Ð¾
 void shiftRight(int arr[], const int size)
 {
-	//Âûâîä èñõîäíîãî ìàññèâà
+	//Ð’Ñ‹Ð²Ð¾Ð´ Ð¸ÑÑ…Ð¾Ð´Ð½Ð¾Ð³Ð¾ Ð¼Ð°ÑÑÐ¸Ð²Ð°
 	for (int i = 0; i < size; i++)
 	{
 		cout << arr[i] << "\t";
 	}
 	cout << endl;
-	//Ñäâèã 
+	//Ð¡Ð´Ð²Ð¸Ð³ 
 	int number_shifts;
-	cout << "Ââåäèòå êîëè÷åñòâî ñäâèãîâ âïðàâî: "; cin >> number_shifts;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÐ´Ð²Ð¸Ð³Ð¾Ð² Ð²Ð¿Ñ€Ð°Ð²Ð¾: "; cin >> number_shifts;
 	for (int i = 0; i < number_shifts; i++)
 	{
 		int buffer = arr[size-1];
@@ -137,7 +137,7 @@ void shiftRight(int arr[], const int size)
 		}
 		arr[0] = buffer;
 	}
-	//Âûâîä íà ýêðàí ñäâèíóòîãî ìàññèâà
+	//Ð’Ñ‹Ð²Ð¾Ð´ Ð½Ð° ÑÐºÑ€Ð°Ð½ ÑÐ´Ð²Ð¸Ð½ÑƒÑ‚Ð¾Ð³Ð¾ Ð¼Ð°ÑÑÐ¸Ð²Ð°
 	for (int i = 0; i < size; i++)
 	{
 		cout << arr[i] << "\t";
